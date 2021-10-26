@@ -21,12 +21,33 @@ public class List {
         return instance;
     }
 
-    /**
-     * Entfernt
-     */
 
+    /**
+     * Removes all tasks from the list
+     */
     public static void clearList() {
+        taskList.clear();
+    }
+
+    /**
+     * Adds a task to the task list
+     * @param t = the task
+     */
+    public static void addTask(Task t) {
 
     }
+
+    /**
+     * Removes a task from the list
+     * @param t = the task to be removed
+     */
+    public static void removeTask(Task t) {
+
+    }
+
+    //TODO: Add methods for changing the status
+
+
+
 
 }

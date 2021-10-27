@@ -4,5 +4,5 @@
  */
 
 public enum Status {
-    DONE, OPEN;
+    DONE, OPEN
 }

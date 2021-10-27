@@ -41,8 +41,12 @@ public class List {
      * Removes a task from the list (it will be deleted)
      * @param t = the task to be removed
      */
-    public static void removeTask(Task t) {
-
+    public static void removeTask(Task t) throws Exception {
+        if(!List.containsTask(t)) {
+            throw new Exception("Task is not on the task list");
+        } else {
+            taskList.remove(t);
+        }
     }
 
     /**
@@ -50,16 +54,32 @@ public class List {
      * @param t = the task
      */
     public static void setDone(Task t) {
-
+        t.setStatus(Status.DONE);
     }
 
     /**
-     *
+     * Sets the status of the task to OPEN
      * @param t = the task
      */
 
     public static void setOPEN(Task t) {
+        t.setStatus(Status.OPEN);
+    }
 
+
+    /**
+     * Checks if the given task is contained in the task list
+     * @param t = the task
+     * @return true if the task is contained in the task list, else returns false
+     */
+
+    private static boolean containsTask(Task t) {
+        for(Task task : taskList) {
+            if(task.equals(t)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 

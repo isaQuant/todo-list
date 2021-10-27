@@ -1,11 +1,6 @@
 import java.util.Date;
 
 public class Task {
-
-
-    /**
-     * If creating a task, it will be automatically added to the list
-     */
     private String title;
     private String description;
     private Date dueDate;

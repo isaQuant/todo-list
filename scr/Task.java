@@ -4,13 +4,20 @@ public class Task {
     private String title;
     private String description;
     private Date dueDate;
+    private Status status;
 
     /**
-     * Constructor, only the title is needed for creating a task
+     * Constructor, only the title is needed for creating a task.
+     * Status is always OPEN when creating a task
      * @param title
      */
     public Task(String title) {
         this.title = title;
+        this.status = Status.OPEN;
+    }
+
+    public Status getStatus() {
+        return status;
     }
 
     /*** Getter and Setter ***/
@@ -24,6 +31,10 @@ public class Task {
 
     public String getDescription() {
         return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Date getDueDate() {

@@ -16,9 +16,7 @@ public class Task {
         this.status = Status.OPEN;
     }
 
-    public Status getStatus() {
-        return status;
-    }
+
 
     /*** Getter and Setter ***/
     public String getTitle() {
@@ -45,6 +43,14 @@ public class Task {
         this.dueDate = dueDate;
     }
 
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
     /**
      * Prints title, due date and description of the task
      */

@@ -33,19 +33,34 @@ public class List {
      * Adds a task to the task list
      * @param t = the task
      */
-    public static void addTask(Task t) {
-
+    static void addTask(Task t) {
+        taskList.add(t);
     }
 
     /**
-     * Removes a task from the list
+     * Removes a task from the list (it will be deleted)
      * @param t = the task to be removed
      */
     public static void removeTask(Task t) {
 
     }
 
-    //TODO: Add methods for changing the status
+    /**
+     * Sets the status of the task to DONE
+     * @param t = the task
+     */
+    public static void setDone(Task t) {
+
+    }
+
+    /**
+     *
+     * @param t = the task
+     */
+
+    public static void setOPEN(Task t) {
+
+    }
 
 
 
